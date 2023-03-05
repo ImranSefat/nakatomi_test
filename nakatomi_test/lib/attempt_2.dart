@@ -78,10 +78,10 @@ class _SecondAttemptState extends State<SecondAttempt> {
         child: Container(
           height: height,
           width: width,
-          // margin: EdgeInsets.only(
-          //   top: 88.0 - height,
-          //   left: 4.0,
-          // ),
+          margin: EdgeInsets.only(
+            top: 88.0 - height < 0 ? 2 : 88.0 - height,
+            left: 4.0,
+          ),
           padding: const EdgeInsets.all(8.0),
           constraints: const BoxConstraints(
             maxWidth: 198,
